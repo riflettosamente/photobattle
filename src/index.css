@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-vt {
+    font-family: 'VT323', monospace;
+  }
+  .font-retro {
+    font-family: 'Silkscreen', monospace;
+  }
+
+  /* Classic 90s SNES JRPG dialog box frame */
+  .rpg-window {
+    background: linear-gradient(180deg, #102568 0%, #06113b 100%);
+    border: 3px solid #f8fafc;
+    box-shadow: 
+      0 0 0 2px #020617,
+      0 6px 0 0 rgba(0, 0, 0, 0.7),
+      inset 0 0 0 2px #1e3a8a;
+  }
+
+  .rpg-window-gold {
+    background: linear-gradient(180deg, #1e1b2e 0%, #0c0a17 100%);
+    border: 3px solid #fbbf24;
+    box-shadow: 
+      0 0 0 2px #020617,
+      0 6px 0 0 rgba(0, 0, 0, 0.7),
+      inset 0 0 0 2px #78350f;
+  }
+
+  .rpg-window-crimson {
+    background: linear-gradient(180deg, #450a0a 0%, #1c0505 100%);
+    border: 3px solid #f87171;
+    box-shadow: 
+      0 0 0 2px #020617,
+      0 6px 0 0 rgba(0, 0, 0, 0.7),
+      inset 0 0 0 2px #991b1b;
+  }
+
+  /* 90s tactile pixel button */
+  .pixel-btn {
+    border-top: 3px solid rgba(255, 255, 255, 0.45);
+    border-left: 3px solid rgba(255, 255, 255, 0.45);
+    border-right: 3px solid rgba(0, 0, 0, 0.65);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.65);
+    transition: transform 0.05s ease;
+  }
+  .pixel-btn:hover {
+    filter: brightness(1.1);
+  }
+  .pixel-btn:active {
+    border-top: 3px solid rgba(0, 0, 0, 0.65);
+    border-left: 3px solid rgba(0, 0, 0, 0.65);
+    border-right: 3px solid rgba(255, 255, 255, 0.45);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.45);
+    transform: translateY(2px);
+  }
+
+  /* Scanline CRT overlay */
+  .crt-scanlines {
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%, 
+      rgba(0, 0, 0, 0.25) 50%
+    ), linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.02),
+      rgba(0, 255, 0, 0.01),
+      rgba(0, 0, 255, 0.02)
+    );
+    background-size: 100% 4px, 6px 100%;
+    pointer-events: none;
+  }
+}

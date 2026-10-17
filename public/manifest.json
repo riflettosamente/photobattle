@@ -1,0 +1,18 @@
+{
+  "short_name": "PhotoBattle",
+  "name": "PHOTO BATTLE",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "64x64",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#020617",
+  "theme_color": "#1e3a8a",
+  "display": "standalone",
+  "orientation": "any",
+  "description": "Sfida le tue foto a coppie e scopri la classifica con l'algoritmo Elo."
+}

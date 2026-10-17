@@ -1,0 +1,6 @@
+{
+  "name": "Photo Battle",
+  "description": "Retro 90s RPG style local pairwise image duel and Elo ranking system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
